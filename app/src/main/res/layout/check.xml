@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/dialogBackground"
+    android:gravity="center_vertical|center_horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:focusable="true"
+            android:gravity=""
+            android:background="#FF3333">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:id="@+id/text_title"
+                android:text="確認金額"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+
+              />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/text"
+            android:text="$0"
+
+            android:textSize="25dp"
+            android:padding="30dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="取消"
+                android:id="@+id/btn_cancel"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="確定"
+                android:id="@+id/btn_yes"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
